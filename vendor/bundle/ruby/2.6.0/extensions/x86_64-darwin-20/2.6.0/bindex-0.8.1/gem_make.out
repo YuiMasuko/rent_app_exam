@@ -1,0 +1,15 @@
+current directory: /Users/yuitt/workspace/rent_exam/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/yuitt/.rbenv/versions/2.6.3/bin/ruby -I /Users/yuitt/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20210805-46518-xssypy.rb extconf.rb
+creating Makefile
+
+current directory: /Users/yuitt/workspace/rent_exam/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/yuitt/workspace/rent_exam/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/yuitt/workspace/rent_exam/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20210805-46518-17hahrr/skiptrace/internal

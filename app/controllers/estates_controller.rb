@@ -16,7 +16,8 @@ class EstatesController < ApplicationController
   end
 
   def edit
-    @estate = Estate.find(params[:id])
+    @estate.stations.build
+    @estates = Station.all
   end
 
   # POST /estates or /estates.json

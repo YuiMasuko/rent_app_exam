@@ -1,29 +1,30 @@
 <p id="notice"><%= notice %></p>
+<div class="contener">
+  <p>
+    <strong>物件名:</strong>
+    <%= @estate.name %>
+  </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @estate.name %>
-</p>
+  <p>
+    <strong>賃料:</strong>
+    <%= @estate.price %>
+  </p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @estate.price %>
-</p>
+  <p>
+    <strong>住所:</strong>
+    <%= @estate.adress %>
+  </p>
 
-<p>
-  <strong>Adress:</strong>
-  <%= @estate.adress %>
-</p>
+  <p>
+    <strong>築年数:</strong>
+    <%= @estate.year %>
+  </p>
 
-<p>
-  <strong>Year:</strong>
-  <%= @estate.year %>
-</p>
+  <p>
+    <strong>備考:</strong>
+    <%= @estate.content %>
+  </p>
+</div>
 
-<p>
-  <strong>Content:</strong>
-  <%= @estate.content %>
-</p>
-
-<%= link_to 'Edit', edit_estate_path(@estate) %> |
-<%= link_to 'Back', estates_path %>
+<%= link_to '編集', edit_estate_path(@estate) %> |
+<%= link_to '戻る', estates_path %>

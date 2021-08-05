@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= form.label "物件名" %>
-    <%= form.text_area :name %>
+    <%= form.text_field :name %>
   </div>
 
   <div class="field">
@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= form.label "住所" %>
-    <%= form.text_area :adress %>
+    <%= form.text_field :adress %>
   </div>
 
   <div class="field">
@@ -36,7 +36,27 @@
     <%= form.text_area :content %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <hr>
+
+  <div class="stations_field">
+    <%= form.fields_for :stations do |m| %>
+      <div class="field">
+        <%= form.label "路線名" %>
+        <%= form.text_field :route %>
+      </div>
+
+      <div class="field">
+        <%= form.label "駅名" %>
+        <%= form.number_field :station_name %>
+      </div>
+
+      <div class="field">
+        <%= form.label "徒歩分数" %>
+        <%= form.number_field :adress %>分
+      </div>
+    <% end %>
   </div>
+    <div class="actions">
+      <%= form.submit %>
+    </div>
 <% end %>

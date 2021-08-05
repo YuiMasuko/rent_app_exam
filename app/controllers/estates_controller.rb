@@ -12,6 +12,7 @@ class EstatesController < ApplicationController
 
   def new
     @estate = Estate.new
+    2.times {@estate.stations.build}
   end
 
   def edit
@@ -55,6 +56,6 @@ class EstatesController < ApplicationController
   end
 
   def estate_params
-    params.require(:estate).permit(:name, :price, :adress, :year, :content)
+    params.require(:estate).permit(:name, :price, :adress, :year, :content, stations_attributes: [:route, :station_name, :walk, :estate_id])
   end
 end
